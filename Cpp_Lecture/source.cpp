@@ -1,80 +1,91 @@
 #include <iostream>
 
-void Damage(int& hp)
+using namespace std;
+
+int data = 25;
+
+namespace A
 {
-	hp -= 100;
+	void Attack()
+	{
+		std::cout << "A 개발자 Attack()" << std::endl;
+	}
 }
+
+namespace B
+{
+	void Attack()
+	{
+		std::cout << "B 개발자 Attack()" << std::endl;
+	}
+}
+
+void Damage(int hp = 100)
+{
+	hp -= 25;
+	cout << "hp의 값: " << hp << endl;
+}
+
+void Move(int x, int y, int z = 10)
+{
+	cout << "x의 값: " << x << endl;
+	cout << "y의 값: " << y << endl;
+	cout << "z의 값: " << z << endl;
+}
+
+using namespace A;
+// 네임스페이스 선언 아래에 사용해야함.
 
 int main()
 {
-#pragma region 스트림
-	// 시간의 흐름에 따라 연속적으로 발생하는
-	// 데이터의 흐름입니다.
+#pragma region 범위 지정 연산자
+	// 여러 범위에서 사용되는 식별자를 구분하는데
+	// 사용하는 연산자입니다.
 
-	char alphabet = 'A';
-	int data = 100;
-	float x = 3.75f;
+	// int data = 100;
+	// 
+	// std::cout << "지역 변수의 data의 값 : "<< data << std::endl;
+	// std::cout << "전역 변수의 data의 값 : "<< ::data << std::endl;
 
-	// 스트림의 경우 입력된 데이터는 출력 장치로 전달하며,
-	// "<<" 연산자를 사용하여 자신이 참조한 값을 반환합니다.
-	// std::cout << "data의 값: "<< data << std::endl;
-	// std::cout << "float의 값: "<< x << std::endl;
-	// std::cout << "alphabet의 값: " << int(alphabet) << std::endl;
-
-	//std::cin >> data;
-	// 스트림으로 입력받을 때 ">>" 연산자를 사용하여 버퍼에
-	// 저장한 다음 NULL 문자까지만 버퍼 안의 내용을 출력합니다.
-	//std::cout << "data의 값: " << data << std::endl;
-
-	// 스트림은 운영체제에 의해 생성되며,
-	// 스트림 자체에 버퍼라는 임시 메모리 공간이 존재합니다.
+	// 범위 지정 연산자는 전역 변수와 같은 이름의 지역변수가
+	// 선언되었을 때 가장 가까운 범위에 선언된 변수의 이름을
+	// 사용하는 범위 규칙이 존재하기 때문에 전역 변수가 호출되지 않습니다.
 
 #pragma endregion
 
-#pragma region 동적 할당과 해제
+#pragma region 이름 공간
+	// 속성을 구분할 수 있도록 유효 범위를 설정하는 영역입니다.
 
-	//	int* ptr = new int;
-	//	*ptr = 100;
-	//	std::cout << *ptr << std::endl;;
-	//	
-	//	delete ptr;
-	//	
-	//	ptr = nullptr;
-	//	
-	//	ptr = new int[5];
-	//	
-	//	for (int i = 0; i < 5; i++)
-	//	{
-	//		ptr[i] = i;
-	//		std::cout << ptr[i] << std::endl;
-	//	}
-	//	
-	//	delete[] ptr;
-#pragma endregion
-
-#pragma region 참조자
-	// 하나의 메모리 공간에 이름을 더 붙이는 것입니다.
-
-	/*int value = 200;
-	int& ref = value;
-
-	std::cout << "value의 값: " << value << std::endl;
-
-	Damage(value);
-
-	std::cout << "value의 값: " << value << std::endl;
-	std::cout << "ref의 값: " << ref << std::endl;*/
+	// A::Attack();
+	// B::Attack();
+	// Attack();
 
 #pragma endregion
 
-#pragma region 범위 기반 for문
+#pragma region  기본 매개변수
+	// 함수의 매개 변수에 값이 전달되지 않았을 때
+	// 기본 값으로 설정되는 매개 변수입니다.
 
-	//	int dataList[5] = { 1,2,3,4,5 };
-	//	
-	//	for (const int& element : dataList)
-	//	{
-	//		std::cout << element << std::endl;
-	//	}
+	// int hp = 100;
+	// Damage();
+	// Move(5, 6);
+	// Move(10, 20, 30);
+#pragma endregion
+
+#pragma region 최소 공배수
+
+	int x, y;
+	cin >> x >> y;
+
+	int count = 0;
+	for (int i = 2; i <= min(x, y); i++)
+	{
+		if (x % i == 0 && y % i == 0)
+		{
+			count = i;
+		}
+	}
+	cout <<  x * y / count << endl;
 
 #pragma endregion
 
