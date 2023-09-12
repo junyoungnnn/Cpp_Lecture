@@ -1,2 +1,3 @@
 C:\Users\IDBLAB\Desktop\Cpp_Lecture\x64\Debug\Cpp_Lecture.exe
 C:\Users\노준영\Desktop\Cpp_Lecture\Cpp_Lecture\x64\Debug\Cpp_Lecture.exe
+C:\Users\IDBLAB\Desktop\Cpp_Lecture\Cpp_Lecture\x64\Debug\Cpp_Lecture.exe
