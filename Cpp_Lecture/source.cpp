@@ -1,97 +1,96 @@
 #include <iostream>
+#include "Camera.h"
 
 using namespace std;
 
-#pragma region 복사 생성자
-	// 같은 객체를 복사하여 생성시킬 때 
-	// 호출되는 생성자입니다.
+#pragma region 상속
+	// 상위 클래스의 속성을 하위 클래스가 사용할 수 있도록
+	// 설정해주는 기능입니다. 
 
-class Item
+class Vehicle
 {
-private:
-	int price;
-	int* size;
+protected:
+	float speed;
+	// 전역변수는 어디서든 접근이 가능한데
+	// 정적변수는 지역변수의 성질을 가지고 있음.
+	// 정적변수는 바깥부분에서 초기화를 해주어야함.
+	static int killcount;
 
 public:
-	Item()
+	Vehicle()
 	{
-		price = 100;
-		size = new int;
-		*size = 999;
-	}
-	// 기본 생성자
-	// public Item() {  }
-
-	Item(const Item& item)
-	{
-		price = item.price;
-		// 깊은 복사
-		size = new int;
-		*size = 450;
+		cout << "Vehicle Object 생성" << endl;
 	}
 
-	~Item()
+	void Movement()
 	{
-		delete size;
+		cout << "이동" << endl;
 	}
 
-	void Show()
+	static int GetCount()
 	{
-		cout << "price: " << price << endl;
-		cout << "*ssize: " << *size << endl;
+		return killcount;
 	}
+
+	~Vehicle()
+	{
+		cout << "Vehicle Object 해제" << endl;
+	}
+	
 };
-#pragma endregion
 
+// 정적변수 초기화
+int Vehicle::killcount = 5;
+
+class Car : public Vehicle
+{
+private:
+	int carID;
+
+public:
+	Car()
+	{
+		carID = 1;
+		speed = 100;
+		cout << "Car Object 생성" << endl;
+	}
+	~Car()
+	{
+		cout << "Car Object 해제" << endl;
+		cout << "killcount: " << killcount++ << endl;
+	}
+
+};
+
+	// 클래스의 상속 관계에서 상위 클래스는 하위 클래스의
+	// 속성을 사용할 수 없으며 , 하위 클래스는 상위 클래스의
+	// 메모리를 포함한 상태로 메모리의 크기가 결정됩니다.
+#pragma endregion
 
 
 int main()
 {
-#pragma region 복사 생성자
+#pragma region 상속
 
-	  // Item item1;
-	  // item1.Show();
-	  // 
-	  // Item item2(item1);
-	  // item2.Show();
+	 /*Vehicle vehicle;
+	 
+	 Car car1;
+	 Car car2;
+	 Car car3;
+
+	 cout << car1.GetCount() << endl;
+
+	 cout << "vehicle의 크기: " << sizeof(vehicle) << endl;
+	 cout << "car의 크기: " << sizeof(car1) << endl;*/
 #pragma endregion
 
-#pragma region 얕은 복사
-	// 객체를 복사할 때 주소값을 복사하여 같은 메모리를
-	// 가르키는 복사입니다.
+#pragma region 클래스 분할과 구현
 
-	//	int* ptr1 = new int;
-	//	int* ptr2 = ptr1;
-	//	
-	//	*ptr2 = 1000;
-	//	
-	//	cout << "ptr1의 값: " << *ptr1 << endl;
-	//	cout << "ptr2의 값: " << *ptr2 << endl;
-	//	
-	//	cout << "ptr1의 주소: " << ptr1 << endl;
-	//	cout << "ptr2의 주소: " << ptr2 << endl;
-	//	
-	//	delete ptr1;
-	// delete ptr2; ERROR
-
-	// 얕은 복사는 객체가 메모리에서 해제될 때 생성자의
-	// 실행 순서와 반대로 소멸자가 실행됩니다.
-	
-	// 복사한 객체가 먼저 해제되므로 원래 있던 객체가
-	// 해제될 떄는 이미 해제된 메모리에 접근하게 됩니다.
-#pragma endregion
-
-#pragma region 깊은 복사
-	// 객체를 복사할 때, 참조 값이 아닌 인스턴스 자체를
-	// 새로 복사하여 서로 다른 메모리를 생성하는 복사입니다.
-	  Item item1;
-	  item1.Show();
-
-	  Item item2(item1);
-	  item2.Show();
+	/*Camera camera;
+	* 
+	camera.Information();*/
 
 #pragma endregion
-
 
 	return 0;
 }
