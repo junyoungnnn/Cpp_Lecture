@@ -5,7 +5,7 @@ class SiegeTank : public Mechanic
 {
 public:
 	SiegeTank();
-	~SiegeTank();
 	void Attack();
+	~SiegeTank();
 };
 

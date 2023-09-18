@@ -7,11 +7,12 @@ SiegeTank::SiegeTank()
 	cout << "½ÃÁî ÅÊÅ© »ı¼º" << endl;
 }
 
-SiegeTank::~SiegeTank()
-{
-}
-
 void SiegeTank::Attack()
 {
 	cout << "½ÃÁî ÅÊÅ© °ø°İ" << endl;
+}
+
+SiegeTank::~SiegeTank()
+{
+	cout << "½ÃÁî ÅÊÅ© »èÁ¦" << endl;
 }

@@ -18,6 +18,7 @@ public:
 	// 하위 클래스에서 함수를 재정의 할 때 상위 클래스의
 	// 함수 형태와 일치해야 합니다.
 #pragma endregion
+	~Vulture();
 
 };
 

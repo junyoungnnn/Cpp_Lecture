@@ -7,11 +7,12 @@ Goliath::Goliath()
 	cout << "榜府狙 积己" << endl;
 }
 
-Goliath::~Goliath()
-{
-}
-
 void Goliath::Attack()
 {
 	cout << "榜府狙 傍拜" << endl;
+}
+
+Goliath::~Goliath()
+{
+	cout << "榜府狙 昏力" << endl;
 }
