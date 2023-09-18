@@ -4,6 +4,7 @@ Vulture::Vulture()
 {
 	health = 80;
 	attack = 20;
+	cout << "国贸 积己" << endl;
 }
 
 void Vulture::Move()

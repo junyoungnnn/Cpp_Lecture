@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Camera.h"
 #include "Vulture.h"
+#include "SiegeTank.h"
+#include "Goliath.h"
 
 using namespace std;
 
@@ -29,13 +31,14 @@ int main()
 	// 상속하는 클래스 내에서 같은 형태의 함수로 재정의
 	// 될 수 있는 함수입니다.
 
-	Mechanic* mechanic1 = new Vulture;
+	// Mechanic* mechanic1 = new Vulture;
+	// 
+	// cout << "Mechanic의 크기: " << sizeof(Mechanic) << endl;
+	// cout << "Vulture의 크기: " << sizeof(Vulture) << endl;
+	// 
+	// mechanic1->Move();
+	// mechanic1->Attack();
 
-	cout << "Mechanic의 크기: " << sizeof(Mechanic) << endl;
-	cout << "Vulture의 크기: " << sizeof(Vulture) << endl;
-
-	mechanic1->Move();
-	mechanic1->Attack();
 	// 스택에는 mechanic1 힙에는 Mechanic, Vulture를 생성했지만
 	// mechanic1에 저장한 주소는 Mechanic만 저장을 함.
 	
@@ -43,6 +46,36 @@ int main()
 	// 가상 함수 실행 시간에 상위 클래스에 대한 참조로
 	// 하위 클래스에 재정의된 함수를 호출할 수 있으며,
 	// 접근 지정자는 공개로 설정해야 합니다.
+#pragma endregion
+
+#pragma region 스타크래프트 유닛 생성
+
+	int number;
+	int count = 0;
+	
+	while (count < 5)
+	{
+		Mechanic* mechanic = nullptr;
+		cin >> number;
+
+		switch (number)
+		{
+		case 1:
+			mechanic = new Vulture;
+			break;
+		case 2:
+			mechanic = new SiegeTank;
+			break;
+		case 3:
+			mechanic = new Goliath;
+			break;
+		default:
+			cout << "다시 입력해 주세요" << endl;
+			continue;
+		}
+		count++;
+		mechanic->Attack();
+	}
 #pragma endregion
 
 	return 0;
