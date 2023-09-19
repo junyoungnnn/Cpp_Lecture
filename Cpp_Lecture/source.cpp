@@ -1,82 +1,55 @@
-#include <iostream>
-#include "Marine.h"
-#include "Ghost.h"
-#include "Firebet.h"
+ï»¿#include <iostream>
 
 using namespace std;
 
-#pragma region ÇÔ¼öÀÇ ¿À¹ö·Îµù
-	// °°Àº ÀÌ¸§ÀÇ ÇÔ¼ö¸¦ ¸Å°³ º¯¼öÀÇ ÀÚ·áÇü°ú ¸Å°³º¯¼öÀÇ
-	// ¼ö·Î ±¸ºÐÇÏ¿© ¿©·¯ °³¸¦ ¼±¾ðÇÒ ¼ö ÀÖ´Â ±â´ÉÀÔ´Ï´Ù.
-void Calculator(char x, char y)
+class Animal
 {
-	cout << "x + y : " << x + y << endl;
-}
+private:
+	int age;
+	float height;
 
-void Calculator(int x, int y)
-{
-	cout << "x + y : " << x + y << endl;
-}
+	char blood;
 
-void Calculator(float x, float y)
-{
-	cout << "x + y : " << x + y << endl;
-}
+public:
+	Animal( int m_age, float m_height ) :
+		age( m_age ), height( m_height ) {
+		cout << "age : " << age << endl;
+		cout << "height : " << height << endl;
+	}
 
-// ÇÔ¼öÀÇ ¿À¹ö·ÎµùÀÇ °æ¿ì ÇÔ¼öÀÇ ¸Å°³ º¯¼ö¿¡
-// Àü´ÞÇÏ´Â ÀÎ¼öÀÇ ÇüÅÂ¸¦ º¸°í È£ÃâÇÏ¹Ç·Î, ¹ÝÈ¯ÇüÀ¸·Î
-// ÇÔ¼öÀÇ ¿À¹ö·ÎµùÀ» »ý¼ºÇÒ ¼ö ¾ø½À´Ï´Ù.
-//int Calculator(float x, float y)
-//{
-//
-//}
+#pragma region this í¬ì¸í„°
+	// ê°ì²´ ìžê¸° ìžì‹ ì„ ê°€ë¦¬í‚¤ëŠ” í¬ì¸í„° ìž…ë‹ˆë‹¤.
+
 #pragma endregion
 
-void Recovery(Unit* unit)
+
+	Animal( char blood, int age, int height )
+	{
+		this->blood = blood;
+		this->age = age;
+		this->height = height;
+
+		cout << "ê°ì²´ì˜ ì£¼ì†Œ : " << this << endl;
+	}
+	
+};
+
+int* Value()
 {
-	unit->SetHP(100);
+	int data = 10;
+	return &data;
 }
 
 int main()
 {
-#pragma region ÇÔ¼öÀÇ ¿À¹ö·Îµù
-	// Calculator('A', 'B');
-	// Calculator(10, 20);
-	// Calculator(5.75f, 4.95f); // f¸¦ ¾ÈºÙÀÌ¸é double·Î ÀÎ½ÄÇÔ.
-#pragma endregion
+	// Animal animal('a', 5, 42.1f);
 
-#pragma region ¼ø¼ö °¡»óÇÔ¼ö
-	// ÇÔ¼ö¸¦ ¼±¾ð¸¸ ÇÒ ¼ö ÀÖÀ¸¸ç, ÇØ´ç Å¬·¡½º¿¡¼­ ±¸ÇöÀ» ÇÒ ¼ö ¾ø°í,
-	// »ó¼Ó ¹ÞÀº ÇÏÀ§ Å¬·¡½º¿¡¼­ ¹Ýµå½Ã ÀçÁ¤ÀÇ¸¦ ÇØ¾ßÇÏ´Â ¸â¹ö ÇÔ¼ö ÀÔ´Ï´Ù.
+	int* ptr = Value();
+	cout << *ptr << endl;
 
-	//Unit * unitPtr = new Marine;
-
-	//unitPtr->SetHP(100);
-	// unitPtr->Skill();
-	//cout << unitPtr->GetHP() << endl;
-
-	Marine* marine = new Marine;
-	cout << "¸¶¸°ÀÇ Ã¼·Â: " << marine->GetHP() << endl;
-	marine->SelfDemage();
-	cout << "¸¶¸°ÀÇ Ã¼·Â: " << marine->GetHP() << endl;
-	marine->Recovery();
-	cout << "¸¶¸°ÀÇ Ã¼·Â: " << marine->GetHP() << endl;
-
-	Ghost* ghost = new Ghost;
-	cout << "°í½ºÆ®ÀÇ Ã¼·Â: " << ghost->GetHP() << endl;
-	ghost->SelfDemage();
-	cout << "°í½ºÆ®ÀÇ Ã¼·Â: " << ghost->GetHP() << endl;
-	ghost->Recovery();
-	cout << "°í½ºÆ®ÀÇ Ã¼·Â: " << ghost->GetHP() << endl;
-
-	Firebet* firebet = new Firebet;
-	cout << "ÆÄÀÌ¾î¹îÀÇ Ã¼·Â: " << firebet->GetHP() << endl;
-	firebet->SelfDemage();
-	cout << "ÆÄÀÌ¾î¹îÀÇ Ã¼·Â: " << firebet->GetHP() << endl;
-	firebet->Recovery();
-	cout << "ÆÄÀÌ¾î¹îÀÇ Ã¼·Â: " << firebet->GetHP() << endl;
-
-#pragma endregion
+	// ëŒ•ê¸€ë§ í¬ì¸í„°
+	*ptr = 300;
+	cout << *ptr << endl;
 
 	return 0;
 }

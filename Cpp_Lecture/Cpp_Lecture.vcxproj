@@ -128,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="Firebet.cpp" />
+    <ClCompile Include="Firebat.cpp" />
     <ClCompile Include="Ghost.cpp" />
     <ClCompile Include="Goliath.cpp" />
     <ClCompile Include="Marine.cpp" />
@@ -139,7 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
-    <ClInclude Include="Firebet.h" />
+    <ClInclude Include="Firebat.h" />
     <ClInclude Include="Ghost.h" />
     <ClInclude Include="Goliath.h" />
     <ClInclude Include="Marine.h" />

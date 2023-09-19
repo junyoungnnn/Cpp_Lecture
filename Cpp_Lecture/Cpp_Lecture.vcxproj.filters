@@ -25,6 +25,12 @@
     <Filter Include="헤더 파일\Camera">
       <UniqueIdentifier>{74b7b034-b4ee-4ded-a77a-944d60d62a18}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Bionic">
+      <UniqueIdentifier>{702c081d-31d4-4adc-96fd-0f3e60a4d3ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Bionic">
+      <UniqueIdentifier>{747423ae-5a90-481d-8586-b6a360579d7c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source.cpp">
@@ -42,17 +48,17 @@
     <ClCompile Include="Vulture.cpp">
       <Filter>소스 파일\Mechanic</Filter>
     </ClCompile>
-    <ClCompile Include="Marine.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Camera.cpp">
       <Filter>소스 파일\Camera</Filter>
     </ClCompile>
-    <ClCompile Include="Firebet.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Ghost.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Bionic</Filter>
+    </ClCompile>
+    <ClCompile Include="Firebat.cpp">
+      <Filter>소스 파일\Bionic</Filter>
+    </ClCompile>
+    <ClCompile Include="Marine.cpp">
+      <Filter>소스 파일\Bionic</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -68,20 +74,20 @@
     <ClInclude Include="Vulture.h">
       <Filter>헤더 파일\Mechanic</Filter>
     </ClInclude>
-    <ClInclude Include="Unit.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Marine.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Camera.h">
       <Filter>헤더 파일\Camera</Filter>
     </ClInclude>
-    <ClInclude Include="Firebet.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Ghost.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Bionic</Filter>
+    </ClInclude>
+    <ClInclude Include="Firebat.h">
+      <Filter>헤더 파일\Bionic</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
+      <Filter>헤더 파일\Bionic</Filter>
+    </ClInclude>
+    <ClInclude Include="Marine.h">
+      <Filter>헤더 파일\Bionic</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

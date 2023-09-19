@@ -1,0 +1,15 @@
+'Cpp_Lecture.exe'(Win32): 'C:\Users\Administrator\Desktop\Cpp_Lecture\Cpp_Lecture\x64\Debug\Cpp_Lecture.exe'을(를) 로드했습니다. 기호가 로드되었습니다.
+'Cpp_Lecture.exe'(Win32): 'C:\Windows\System32\ntdll.dll'을(를) 로드했습니다. 
+'Cpp_Lecture.exe'(Win32): 'C:\Windows\System32\kernel32.dll'을(를) 로드했습니다. 
+'Cpp_Lecture.exe'(Win32): 'C:\Windows\System32\KernelBase.dll'을(를) 로드했습니다. 
+'Cpp_Lecture.exe'(Win32): 'C:\Windows\System32\msvcp140d.dll'을(를) 로드했습니다. 
+'Cpp_Lecture.exe'(Win32): 'C:\Windows\System32\vcruntime140_1d.dll'을(를) 로드했습니다. 
+'Cpp_Lecture.exe'(Win32): 'C:\Windows\System32\vcruntime140d.dll'을(를) 로드했습니다. 
+'Cpp_Lecture.exe'(Win32): 'C:\Windows\System32\ucrtbased.dll'을(를) 로드했습니다. 
+0x3e58 스레드가 종료되었습니다(코드: 0 (0x0)).
+'Cpp_Lecture.exe'(Win32): 'C:\Windows\System32\kernel.appcore.dll'을(를) 로드했습니다. 
+'Cpp_Lecture.exe'(Win32): 'C:\Windows\System32\msvcrt.dll'을(를) 로드했습니다. 
+'Cpp_Lecture.exe'(Win32): 'C:\Windows\System32\rpcrt4.dll'을(를) 로드했습니다. 
+0x12ac 스레드가 종료되었습니다(코드: 0 (0x0)).
+0x3074 스레드가 종료되었습니다(코드: 0 (0x0)).
+'[15168] Cpp_Lecture.exe' 프로그램이 종료되었습니다(코드: 0 (0x0)).

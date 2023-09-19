@@ -2,6 +2,7 @@
 
 Marine::Marine()
 {
+	maxHP = 100;
 	SetHP(maxHP);
 }
 
@@ -12,7 +13,7 @@ void Marine::Skill()
 
 void Marine::SetHP(int value)
 {
-	if (value >= 0 && value <= 100)
+	if (value >= 0 && value <= maxHP)
 	{
 		health = value;
 	}
@@ -32,7 +33,7 @@ void Marine::SelfDemage()
 	health -= 15;
 }
 
-void Marine::Recovery()
+void Marine::RecoveryHP()
 {
 	SetHP(maxHP);
 }

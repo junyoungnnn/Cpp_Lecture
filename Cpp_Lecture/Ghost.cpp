@@ -2,6 +2,7 @@
 
 Ghost::Ghost()
 {
+	maxHP = 75;
 	SetHP(maxHP);
 }
 
@@ -11,7 +12,7 @@ void Ghost::Skill()
 
 void Ghost::SetHP(int value)
 {
-	if (value >= 0 && value <= 100)
+	if (value >= 0 && value <= maxHP)
 	{
 		health = value;
 	}
@@ -31,7 +32,7 @@ void Ghost::SelfDemage()
 	health -= 15;
 }
 
-void Ghost::Recovery()
+void Ghost::RecoveryHP()
 {
 	SetHP(maxHP);
 }
