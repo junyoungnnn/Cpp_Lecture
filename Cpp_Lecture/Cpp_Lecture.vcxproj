@@ -128,7 +128,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Firebet.cpp" />
+    <ClCompile Include="Ghost.cpp" />
     <ClCompile Include="Goliath.cpp" />
+    <ClCompile Include="Marine.cpp" />
     <ClCompile Include="Mechanic.cpp" />
     <ClCompile Include="SiegeTank.cpp" />
     <ClCompile Include="source.cpp" />
@@ -136,9 +139,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="Firebet.h" />
+    <ClInclude Include="Ghost.h" />
     <ClInclude Include="Goliath.h" />
+    <ClInclude Include="Marine.h" />
     <ClInclude Include="Mechanic.h" />
     <ClInclude Include="SiegeTank.h" />
+    <ClInclude Include="Unit.h" />
     <ClInclude Include="Vulture.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -13,41 +13,74 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="헤더 파일\Mechanic">
+      <UniqueIdentifier>{c1dbce5d-f07d-4024-8754-eaa79282332f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Mechanic">
+      <UniqueIdentifier>{aafb76b0-dd4c-446f-816c-c8e4423b0b74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Camera">
+      <UniqueIdentifier>{8001f8c0-8035-40de-8916-d121c5865208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Camera">
+      <UniqueIdentifier>{74b7b034-b4ee-4ded-a77a-944d60d62a18}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Camera.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="Goliath.cpp">
+      <Filter>소스 파일\Mechanic</Filter>
     </ClCompile>
     <ClCompile Include="Mechanic.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Mechanic</Filter>
     </ClCompile>
     <ClCompile Include="SiegeTank.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Goliath.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Mechanic</Filter>
     </ClCompile>
     <ClCompile Include="Vulture.cpp">
+      <Filter>소스 파일\Mechanic</Filter>
+    </ClCompile>
+    <ClCompile Include="Marine.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>소스 파일\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Firebet.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Ghost.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Camera.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Goliath.h">
+      <Filter>헤더 파일\Mechanic</Filter>
     </ClInclude>
     <ClInclude Include="Mechanic.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Vulture.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Mechanic</Filter>
     </ClInclude>
     <ClInclude Include="SiegeTank.h">
+      <Filter>헤더 파일\Mechanic</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulture.h">
+      <Filter>헤더 파일\Mechanic</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Goliath.h">
+    <ClInclude Include="Marine.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>헤더 파일\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Firebet.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Ghost.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
