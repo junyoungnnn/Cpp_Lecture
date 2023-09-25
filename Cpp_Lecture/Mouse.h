@@ -1,7 +1,7 @@
 #pragma once
 #include "Component.h"
 
-class Mouse : public Component
+class Mouse : virtual public Component
 {
 public:
 	Mouse();

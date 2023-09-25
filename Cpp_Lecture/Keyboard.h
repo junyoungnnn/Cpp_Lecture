@@ -1,7 +1,7 @@
 #pragma once
 #include "Component.h"
 
-class Keyboard : public Component
+class Keyboard : virtual public Component
 {
 public:
 	Keyboard();

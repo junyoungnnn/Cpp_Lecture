@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bank.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="Computer.cpp" />
@@ -138,11 +139,13 @@
     <ClCompile Include="Marine.cpp" />
     <ClCompile Include="Mechanic.cpp" />
     <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="SiegeTank.cpp" />
     <ClCompile Include="source.cpp" />
     <ClCompile Include="Vulture.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Bank.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="Computer.h" />
@@ -154,6 +157,7 @@
     <ClInclude Include="Marine.h" />
     <ClInclude Include="Mechanic.h" />
     <ClInclude Include="Mouse.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="SiegeTank.h" />
     <ClInclude Include="Unit.h" />
     <ClInclude Include="Vulture.h" />
