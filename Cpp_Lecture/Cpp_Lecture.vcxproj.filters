@@ -37,6 +37,12 @@
     <Filter Include="소스 파일\Computer">
       <UniqueIdentifier>{c4a43444-ccc7-40aa-ab6e-b79b9b664517}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\etc">
+      <UniqueIdentifier>{71b4d048-d813-476d-85b0-308befd70552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\etc">
+      <UniqueIdentifier>{fb652b94-3d7b-4309-adcc-d5fd290a05f1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source.cpp">
@@ -66,9 +72,6 @@
     <ClCompile Include="Marine.cpp">
       <Filter>소스 파일\Bionic</Filter>
     </ClCompile>
-    <ClCompile Include="LinkedList.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Computer.cpp">
       <Filter>소스 파일\Computer</Filter>
     </ClCompile>
@@ -81,10 +84,19 @@
     <ClCompile Include="Mouse.cpp">
       <Filter>소스 파일\Computer</Filter>
     </ClCompile>
+    <ClCompile Include="Bank.cpp">
+      <Filter>소스 파일\etc</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedList.cpp">
+      <Filter>소스 파일\etc</Filter>
+    </ClCompile>
     <ClCompile Include="Player.cpp">
+      <Filter>소스 파일\etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Bank.cpp">
+    <ClCompile Include="Item.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -116,9 +128,6 @@
     <ClInclude Include="Marine.h">
       <Filter>헤더 파일\Bionic</Filter>
     </ClInclude>
-    <ClInclude Include="LinkedList.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Mouse.h">
       <Filter>헤더 파일\Computer</Filter>
     </ClInclude>
@@ -131,10 +140,19 @@
     <ClInclude Include="Component.h">
       <Filter>헤더 파일\Computer</Filter>
     </ClInclude>
+    <ClInclude Include="Bank.h">
+      <Filter>헤더 파일\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>헤더 파일\etc</Filter>
+    </ClInclude>
     <ClInclude Include="Player.h">
+      <Filter>헤더 파일\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Bank.h">
+    <ClInclude Include="Item.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

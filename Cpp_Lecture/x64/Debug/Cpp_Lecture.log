@@ -1,9 +1,4 @@
-﻿  Bank.cpp
-C:\Users\IDBLAB\Desktop\Cpp_Lecture\Cpp_Lecture\Bank.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  Player.cpp
+﻿  Inventory.cpp
   source.cpp
-C:\Users\IDBLAB\Desktop\Cpp_Lecture\Cpp_Lecture\source.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-C:\Users\IDBLAB\Desktop\Cpp_Lecture\Cpp_Lecture\Component.h(2,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
-C:\Users\IDBLAB\Desktop\Cpp_Lecture\Cpp_Lecture\Bank.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
   코드를 생성하고 있습니다...
-  Cpp_Lecture.vcxproj -> C:\Users\IDBLAB\Desktop\Cpp_Lecture\Cpp_Lecture\x64\Debug\Cpp_Lecture.exe
+  Cpp_Lecture.vcxproj -> C:\Users\노준영\Desktop\Cpp_Lecture\Cpp_Lecture\x64\Debug\Cpp_Lecture.exe
