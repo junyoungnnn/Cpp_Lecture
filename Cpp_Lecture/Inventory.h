@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include "Item.h"
+#include "InputKey.h"
 
 using namespace std;
 
@@ -11,12 +12,15 @@ private:
 	int x = 5;
 	int y = 3;
 	int invenSize = x * y;
+	int lineX;
+	int selectIndex;
+
 	Item* items;
-	int itemCount;
 public:
 	Inventory(int x = 5, int y = 3);
 	void ShowInventory();
-	void AddItem(Item & item);
+	void AddItem(); 
 	void DiscardItem();
+	void SelectNum();
 };
 
