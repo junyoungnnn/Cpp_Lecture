@@ -15,5 +15,6 @@ public:
 	void ShowInfo();
 	void SetCheck(bool check);
 	bool GetCheck();
+	void SetItem( const char* name, int price);
 };
 

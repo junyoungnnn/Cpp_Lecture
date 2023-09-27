@@ -20,7 +20,8 @@ public:
 	Inventory(int x = 5, int y = 3);
 	void ShowInventory();
 	void AddItem(); 
-	void DiscardItem();
-	void SelectNum();
+	void SelectNum(InputKey inputKey);
+	void ItemInfo();
+	int GetIndex();
 };
 

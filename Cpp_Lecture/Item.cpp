@@ -16,7 +16,14 @@ bool Item::GetCheck()
 	return check;
 }
 
+void Item::SetItem( const char* name, int price)
+{
+	this->name = name;
+	this->price = price;
+}
+
 void Item::ShowInfo()
 {
-
+	cout << "Item Name: " << name << endl;
+	cout << "Item Price: " << price << endl;
 }
