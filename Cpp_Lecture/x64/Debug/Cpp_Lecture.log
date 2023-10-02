@@ -1,2 +1,4 @@
-﻿  Inventory.cpp
+﻿  source.cpp
+C:\Users\노준영\Desktop\Cpp_Lecture\Cpp_Lecture\source.cpp(28,13): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\노준영\Desktop\Cpp_Lecture\Cpp_Lecture\source.cpp(74,14): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Cpp_Lecture.vcxproj -> C:\Users\노준영\Desktop\Cpp_Lecture\Cpp_Lecture\x64\Debug\Cpp_Lecture.exe
