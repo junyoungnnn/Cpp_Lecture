@@ -132,6 +132,7 @@
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="Computer.cpp" />
     <ClCompile Include="Firebat.cpp" />
+    <ClCompile Include="game.cpp" />
     <ClCompile Include="Ghost.cpp" />
     <ClCompile Include="Goliath.cpp" />
     <ClCompile Include="InputKey.cpp" />

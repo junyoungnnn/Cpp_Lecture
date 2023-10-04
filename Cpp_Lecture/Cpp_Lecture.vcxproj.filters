@@ -108,6 +108,9 @@
     <ClCompile Include="InputKey.cpp">
       <Filter>소스 파일\Inventory</Filter>
     </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Goliath.h">
@@ -117,9 +120,6 @@
       <Filter>헤더 파일\Mechanic</Filter>
     </ClInclude>
     <ClInclude Include="SiegeTank.h">
-      <Filter>헤더 파일\Mechanic</Filter>
-    </ClInclude>
-    <ClInclude Include="Vulture.h">
       <Filter>헤더 파일\Mechanic</Filter>
     </ClInclude>
     <ClInclude Include="Camera.h">
@@ -166,6 +166,9 @@
     </ClInclude>
     <ClInclude Include="Item.h">
       <Filter>헤더 파일\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulture.h">
+      <Filter>헤더 파일\Mechanic</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
