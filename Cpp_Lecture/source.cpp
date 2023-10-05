@@ -1,6 +1,6 @@
 ﻿#include <iostream>
-#include <stack>
-#include <queue>
+#include <list>
+
 using namespace std;
 
 #pragma region 컨테이너 어댑터
@@ -17,43 +17,35 @@ using namespace std;
 
 int main()
 {
-#pragma region 컨테이너 어댑터 (Stack)
+#pragma region 문자열
 
-	//stack<int> stack;
+	/*std::string content = "Content";
 
-	//stack.push( 10 );
-	//stack.push( 20 );
-	//stack.push( 30 );
-	//stack.push( 40 );
-	//stack.push( 50 );
+	cout << "content 변수의 값 : " << content << endl;
+	cout << "content 변수의 값 : " << content.size() << endl;
 
-	//// 50
-	//// 40
-	//// 30
-	//// 20
-	//// 10
+	content = "League";
 
-	//while(stack.size() > 0 )
-	//{//(stack.empty == false)
-	//	cout << "Stack의 Top : " << stack.top() << endl;
-	//	stack.pop();
-	//}
+	cout << "위치" << content.find("Le") << endl;*/
 
 #pragma endregion
 
-#pragma region  컨테이너 어댑터 (Queue)
-	queue<int> queue;
+#pragma region 연관 컨테이너
+	// KEY와 VALUE가 하나의 구성으로 이루어진
+	// 컨테이너 입니다.
+	// STL에서 사용하는것은 양방향 연결 리스트
 
-	queue.push( 10 );
-	queue.push( 20 );
-	queue.push( 30 );
-	queue.push( 40 );
-	queue.push( 50 );
+	list<int> dataList;
+	dataList.push_back( 10 );
+	dataList.push_front( 50 );
+	dataList.push_front( 25 );
+	dataList.push_back( 33 );
 
-	while ( queue.empty() == false )
+	list<int>::iterator iter;
+
+	for ( iter = dataList.begin(); iter != dataList.end(); iter++ )
 	{
-		cout << queue.front() << endl;
-		queue.pop();
+		cout << *iter << endl;
 	}
 
 #pragma endregion

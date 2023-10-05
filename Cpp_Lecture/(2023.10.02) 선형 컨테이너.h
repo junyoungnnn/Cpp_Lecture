@@ -13,10 +13,7 @@ using namespace std;
 #define RIGHT 77
 #define DOWN 80
 
-// #define UP "↑"
-// #define LEFT "←"
-// #define RIGHT "→"
-// #define DOWN "↓"
+int createCount;
 
 #pragma region 선형 컨테이너
 	// 데이터를 선형으로 저장하며, 특별한 제약이나
@@ -79,72 +76,72 @@ int main()
 #pragma endregion
 
 #pragma region 리듬 게임
-	/*
-	int round = 1;
-	int seed = 0;
-	int hp = 5;
-	srand( time( NULL ) );
+    srand( time( NULL ) );
 
-	while ( round < 5 )
-	{
-		//round++;
-		std::vector<const char*> vector;
-		std::vector<const char*> answer;
+    std::vector<const char*> note;
+    createCount = 5;
 
-		cout << "Q: ";
-		for ( int i = 0; i < round; i++ )
-		{
+    for ( int i = 0; i < createCount; i++ )
+    {
+        int random = rand() % 4;
 
-			seed = rand() % 4;
-			vector.push_back( point[seed] );
-			cout << vector[i] << " ";
-			cout << endl;
+        switch ( random )
+        {
+        case 0: note.push_back( "↑" );
+            break;
+        case 1: note.push_back( "←" );
+            break;
+        case 2: note.push_back( "→" );
+            break;
+        case 3: note.push_back( "↓" );
+            break;
+        }
+    }
 
-				while ( 1 ) {
-				char key = 0;
-				if ( _kbhit() )
-				{
-					if ( answer.size() == round )
-					{
-						for ( int i = 0; i < round; i++ )
-						{
-							if ( strcmp( vector[i], answer[i] ) != 0 )
-								return 0;
-						}
-						cout << endl;
-						break;
-					}
+    char key = 0;
 
-					key = _getch();
-					if ( key == -32 )
-					{
-						key = _getch();
-					}
+    // note 비어있다.  note.empty() -> 0  
 
-					switch ( key )
-					{
-					case LEFT:
-						cout << "←";
-						answer.push_back( point[1] );
-						break;
-					case RIGHT:
-						cout << "→";
-						answer.push_back( point[0] );
-						break;
-					case UP:
-						cout << "↑";
-						answer.push_back( point[2] );
-						break;
-					case DOWN:
-						cout << "↓";
-						answer.push_back( point[3] );
-						break;
-					}
-				}
-			}
-		}
-	}
-	*/
+    while ( note.empty() == false )
+    {
+        for ( int i = 0; i < note.size(); i++ )
+        {
+            cout << note[i] << " ";
+        }
+
+        key = _getch();
+
+        if ( key == -32 )
+        {
+            key = _getch();
+        }
+
+        switch ( key )
+        {
+        case UP: if ( note[note.size() - 1] == "↑" )
+        {
+            note.pop_back();
+        }
+               break;
+        case LEFT: if ( note[note.size() - 1] == "←" )
+        {
+            note.pop_back();
+        }
+                 break;
+        case RIGHT: if ( note[note.size() - 1] == "→" )
+        {
+            note.pop_back();
+        }
+                  break;
+        case DOWN: if ( note[note.size() - 1] == "↓" )
+        {
+            note.pop_back();
+        }
+                 break;
+        }
+
+        system( "cls" );
+    }
 #pragma endregion
 
 #pragma region deque 컨테이너
